@@ -3,7 +3,6 @@ var lr = require('tiny-lr'),
     jade = require('gulp-jade'),
     stylus = require('gulp-stylus'),
     livereload = require('gulp-livereload'),
-    csso = require('gulp-csso'),
     concat = require('gulp-concat'),
     connect = require('connect'),
     server = lr();
