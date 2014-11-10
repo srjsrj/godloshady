@@ -1,0 +1,26 @@
+{
+  "name": "godloshady",
+  "version": "0.0.1",
+  "description": "website godloshady",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/srjsrj/godloshady.git"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "gulp": "~3.7.0",
+    "gulp-concat": "^2.2.0",
+    "connect": "^2.14.2",
+    "connect-livereload": "^0.3.2",
+    "gulp-connect": "^1.0.7",
+    "gulp-jade": "^0.4.2",
+    "gulp-livereload": "^1.2.0",
+    "gulp-stylus": "^0.1.0",
+    "tiny-lr": "^0.0.5"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}

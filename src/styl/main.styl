@@ -1,0 +1,223 @@
+@import 'nib'
+@import 'normalize'
+
+clearfix()
+    zoom 1
+    &:after
+    &:before
+        content ""
+        display table
+    &:after
+        clear both
+
+html,
+body
+    height 100%
+
+::-moz-selection 
+    background #b3d4fc
+    text-shadow none
+
+::selection 
+    background #b3d4fc
+    text-shadow none
+
+::-webkit-input-placeholder 
+   color #999
+
+:-moz-placeholder
+   color #999 
+
+::-moz-placeholder
+   color #999
+
+:-ms-input-placeholder 
+   color #999
+
+hr 
+    display block
+    height 1px
+    border 0
+    border-top 1px solid #ccc
+    margin 1em 0
+    padding 0
+
+audio,
+canvas,
+img,
+svg,
+video 
+    vertical-align middle
+
+fieldset 
+    border 0
+    margin 0
+    padding 0
+
+textarea 
+    resize vertical
+
+.b-body
+    font-size 15px
+    line-height 1.428
+    min-width 940px
+    color #333
+    background #fff
+
+.b-layout
+    width 920px
+    margin 0 auto
+    clearfix()
+
+.b-btn
+    display inline-block
+    vertical-align middle
+    outline none
+    cursor pointer
+    border none
+    text-decoration none
+    &_brown
+        border-radius 4px
+        border 4px solid #dead75
+        color #dead75
+        padding 10px 30px
+        font-weight 600
+        font-size 18px
+        text-transform uppercase
+        transition border-color .2s ease, color .2s ease, background-color .2s ease
+        &:hover
+            border-color #86807a
+            color #fff
+        &:active
+            background-color #fff
+            border-color #fff
+            color #333
+
+
+.b-sidebar
+    position fixed
+    top 0
+    bottom 0
+    left 0
+    width 320px
+    background #fff
+    padding 33px 0 0
+    &__contact
+        text-align center
+        margin 20px 0 0
+        &__phone
+            text-decoration none
+            color #000
+            font-weight 600
+            font-size 18px
+
+.b-logo
+    display block
+    text-indent -9999px
+    width 156px
+    height 173px
+    image: '../images/godloshady.png' 156px 173px
+    transition opacity .2s ease
+    margin 0 auto 41px
+    &:hover
+        opacity .8
+
+.b-nav
+    padding 20px 0
+    border 1px solid #d7d5d3
+    border-width 1px 0
+    margin 0 auto
+    width 150px
+    &__item
+        text-align center
+        display block
+        color #000
+        text-decoration none
+        margin 4px 0
+        &__name
+            display inline-block
+            vertical-align top
+            text-transform uppercase
+            font-size 18px
+            font-weight 600
+            padding 8px 13px
+            border-radius 5px
+            transition color .2s ease, background-color .2s ease
+        &:hover
+            .b-nav__item__name
+                color #fff
+                background-color #352b21
+            
+
+
+.b-content-wrap
+    margin 0 0 0 320px
+    max-width 1024px
+    padding-right 20px
+
+.b-promo-slider
+    &__slide
+        &__text
+            position absolute
+            bottom 50px
+            left 45px
+            padding 25px 35px
+            border 1px solid #fff
+            font-weight 600
+            color #fff
+            text-align center
+            text-transform uppercase
+            font-size 24px
+            &:before
+                content ''
+                background url(../images/b-promo-slider__slide__text.png)
+                position absolute
+                bottom 100%
+                left 50%
+                margin 0 0 0 -56px
+                width 122px
+                height 49px
+    
+.b-about
+    padding 65px 65px 90px
+    background url(../images/b-about.jpg) 100% 100% no-repeat
+    background-size cover
+    &__title
+        font-size 30px
+        margin 0 0 25px
+        font-weight 800
+        text-transform uppercase
+    &__text
+        max-width 380px
+        font-size 15px
+        line-height 1.4
+
+
+.b-gift
+    padding 60px 70px
+    background-color #352b21
+    clerfix()
+    overflow hidden
+    &__icon
+        width 241px
+        height 277px
+        background url(../images/b-gift__icon-bg.png)
+        float left
+        &__visual
+            width 219px
+            height 251px
+            margin 13px auto
+            display block
+            image: '../images/b-gift__icon.png' 219px 251px
+
+            
+    &__text
+        color #d7d5d3
+        margin-left 306px
+    &__title
+        color #fff
+        font-weight 800
+        margin 0 0 20px
+        text-transform uppercase
+
+@import 'bxslider'
