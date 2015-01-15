@@ -1,0 +1,43 @@
+doctype
+html.no-js
+  head
+    include _head.jade
+  body.b-body
+
+    .b-page
+        .b-sidebar
+            include _sidebar.jade
+
+        .b-content-wrap
+            .b-content
+                header.b-title
+                    h1.b-title__name тренеры
+                
+                aside.b-page-desc.b-page-desc_train
+                    img.b-page-desc__img(src="images/_desc-train.jpeg", alt="")
+                    h2.b-page-desc__text Лучшие тренеры помогут вам и детям
+
+                ul.b-offer-list
+                    li.b-offer-list__item
+                        .b-offer
+                            .b-offer__image
+                                .b-masked-image
+                                    img.b-masked-image__img(src="http://hash2vote.ru/img/DimaBilan.jpeg", alt="Trainer name")
+                            .b-offer__text
+                                h3.b-offer__title нюша ивановна
+                                p Душа моя  неземной радостью, как эти чудесные весенние утра, которыми   неземной радостью, как эти чудесные весенние утра, которыми  озарена неземной радостью, как эти чудесные весенние утра, которыми 
+                                a.b-btn.b-btn_brown.b-btn_brown_size-s.b-btn_brown_bright-bg(href="/#request") записаться на занятие
+                    li.b-offer-list__item
+                        .b-offer
+                            .b-offer__image
+                                .b-masked-image
+                                    img.b-masked-image__img(src="http://st.kp.yandex.net/images/actor_iphone/iphone360_1562341.jpg", alt="Trainer name")
+                            .b-offer__text
+                                h3.b-offer__title нюша ивановна
+                                p Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми неземной радостью, как эти чудесные весенние утра, которыми неземной радостью, как эти чудесные весенние утра, которыми неземной радостью, как эти чудесные весенние утра, которыми 
+                                a.b-btn.b-btn_brown.b-btn_brown_size-s.b-btn_brown_bright-bg(href="/#request") записаться на занятие
+            
+            include _footer.jade
+
+
+    include _scripts.jade

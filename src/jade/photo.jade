@@ -1,0 +1,25 @@
+doctype
+html.no-js
+  head
+    include _head.jade
+  body.b-body
+
+    .b-page
+        .b-sidebar
+            include _sidebar.jade
+
+        .b-content-wrap
+            .b-content
+                header.b-title
+                    h1.b-title__name тренеры
+                
+                aside.b-page-desc.b-page-desc_train
+                    img.b-page-desc__img(src="images/_desc-train.jpeg", alt="")
+                    h2.b-page-desc__text Лучшие тренеры помогут вам и детям
+
+
+
+            include _footer.jade
+
+
+    include _scripts.jade

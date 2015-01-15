@@ -1,5 +1,7 @@
+@import 'ficon/fontello.css'
 @import 'nib'
 @import 'normalize'
+@import 'b-icon'
 
 clearfix()
     zoom 1
@@ -92,6 +94,14 @@ textarea
             background-color #fff
             border-color #fff
             color #333
+        &_bright-bg
+            &:hover
+                border-color #dead75
+                background-color #dead75
+        
+        &_size-s
+            padding 5px 15px
+            font-size 15px
 
 
 .b-sidebar
@@ -110,6 +120,18 @@ textarea
             color #000
             font-weight 600
             font-size 18px
+    &__soc
+        margin 10px 0 0
+        text-align center
+
+.b-soc-link
+    font-size 18px
+    color #352b21
+    display inline-block
+    vertical-align top
+    transition color .2s ease
+    &:hover
+        color #dead75
 
 .b-logo
     display block
@@ -219,5 +241,190 @@ textarea
         font-weight 800
         margin 0 0 20px
         text-transform uppercase
+        
+.b-title
+    background-color #000000
+    padding 25px 45px
+    color #fff
+    &__name
+        text-transform uppercase
+        font-size 30px
+        margin 0
+        font-weight 300
 
+.b-page-desc
+    position relative
+    &__img
+        width 100%
+    &__text
+        position absolute
+        margin 0
+        top 50%
+        left 50%
+        font-weight 300
+        text-align center
+        font-size 20px
+        border 1px solid #fff
+        border-width 1px 0
+        padding 20px 15px
+        &:before
+            content ''
+            position absolute
+            bottom 100%
+            left 50%
+            margin 0 0 0 -56px
+            width 112px
+            height 49px
+            background-image url(../images/_l-white.png)
+
+.b-offer__image
+    width 243px
+    height 280px
+    overflow hidden
+    position relative
+    img
+        width 100%
+    &:after
+        content ''
+        position absolute
+        top 0
+        left 0
+        width 100%
+        height 100%
+        background url(../images/mask.png)
+
+.b-offer
+    &-list
+        list-style none
+        padding 0 0 0 15px
+        margin 0
+        &__item
+            padding 35px 0
+            border-top 1px dashed #ebebeb
+            &:first-child
+                border-top 0
+    clearfix()
+    &__image
+        width 243px
+        float left
+    &__text
+        margin-left 280px
+        padding 45px 0 0
+        color #6e6964
+        p
+            margin 0 0 1em
+    &__title
+        text-transform uppercase
+        font-size 21px
+        font-weight bold
+        margin 0 0 15px
+        color #352b21
+        border-bottom 1px solid #eae9e8
+        display inline-block
+
+.b-horse-list
+    list-style none
+    padding 0
+    margin 40px 0
+    font-size 0
+    text-align center
+    clearfix()
+    &__item
+        float left
+        width 50%
+        margin 0 0 20px
+        text-align center
+        .b-horse
+            display inline-block
+            vertical-align top
+
+.b-horse
+    &__pic
+        display block
+        width 296px
+        height 383px
+        background #fff
+        position relative
+        text-align center
+        color #31281d
+        transition color .3s ease
+        &:hover
+            color #b1b1b1
+            img
+                opacity .8
+            &:after
+            .b-horse__name 
+            .b-horse__info
+                transform translateY(5px)
+        img
+            transition opacity .2s ease
+            width 100%
+        &:before
+            content ''
+            position absolute
+            z-index 2
+            top 0
+            left 0
+            width 100%
+            height 100%
+            background url(../images/mask2.png)
+        &:after
+            content ''
+            position absolute
+            z-index 3
+            bottom 72px
+            left -7px
+            width 312px
+            height 86px
+            background url(../images/horse-title.png)
+            transition transform .2s ease
+    &__name
+    &__info
+        position absolute
+        z-index 4
+        bottom 111px
+        left 0
+        right 0
+        margin 0
+        transition transform .2s ease
+    &__name
+        font-size 21px
+        text-transform uppercase
+        font-weight bold
+    &__info
+        bottom 90px
+        opacity .8
+        font-size 13px
+    &__owner
+        margin 15px 0
+        h4
+            font-size 15px
+            margin 0
+            text-transform uppercase
+        h5
+            font-size 13px
+            color #6d6863
+            margin 0
+            font-weight normal
+
+
+
+.b-footer
+    border 1px solid #e5e5e5
+    font-size 13px
+    padding 15px 45px
+    text-transform uppercase
+    color #b1b1b1
+    clearfix()
+    a
+        color #424242
+        text-decoration none
+        transition color .2s ease
+        .icon-mail
+            margin-right 5px
+        &:hover
+            color #b1b1b1
+    &__contact
+        float right
+        
 @import 'bxslider'

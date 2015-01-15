@@ -1,14 +1,7 @@
 doctype
 html.no-js
   head
-    meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    title КСК Год лошади — Красноярск
-    meta(name='description', content='Конный клуб "Год лошади". Прокат лошадей, фотосессии, постой. Красноярск.')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='stylesheet', href='css/main.css')
-    |<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    script(src='js/modernizr.js')
+    include _head.jade
   body.b-body
 
     .b-page
@@ -24,7 +17,4 @@ html.no-js
             include _footer.jade
 
 
-    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
-    script window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')
-    script(src='js/p.js')
-    script(src='js/main.js')
+    include _scripts.jade
